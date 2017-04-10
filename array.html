@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+    // 数组排重第一种方法
+
+        var arr = [1,2,3,4,5,4,3,6,7,89,0,2,3,5,1,4,2]
+
+        var arr1 = [];
+
+        function str(str1){
+            for( var i = 0; i < arr.length; i++ ) {
+                if(arr1.indexOf(arr[i]) == -1) {
+
+                    arr1.push(arr[i])
+
+                }
+            }
+            return arr1
+        }
+        var drr = str(arr1);
+        console.log(drr.sort())
+
+
+    // 数组排重第一种方法
+
+
+        var nums = [11,12,11,13,14,13,15,14,30]
+
+        var num = []
+
+            for( var i = 0; i < nums.length; i++ ) {
+                if(num.indexOf(nums[i]) == -1) {
+
+                    num.push(nums[i])
+                    
+                }
+            }
+
+            num.sort(number)
+
+            function number(n,m){
+                return n-m
+            }
+
+            console.log(num)
+
+
+    </script>
+</body>
+</html>
